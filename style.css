@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(0, 0%, 95%);
+    font-family: sans-serif, serif;
+    font-size: 15px;
+    min-height: 100%vh;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+   
+}
+
+h2, button {
+    color:hsl(0, 0%, 95%);
+}
+
+p {
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+button {
+    background-color: hsl(0, 0%, 95%);
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    transition: .3s ease-in;
+}
+
+.container {
+    width: 900px;
+    margin: 100px auto;
+    padding: 0 30px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border-radius: 10px;
+    overflow: hidden;
+
+}
+
+.sedan {
+    background-color: hsl(31, 77%, 52%);
+    padding: 25px;
+    line-height: 1.6rem;
+}
+
+.sedan img {
+    width: 30%;
+    margin-bottom: 20px;
+}
+.sedan h2 {
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.sedan p {
+    margin-bottom: 50px;
+}
+.sedan button {
+    color: hsl(31, 77%, 52%);
+}
+.sedan button:hover {
+    color: hsl(0, 0%, 95%);
+    background-color: hsl(31, 77%, 52%);
+    border: 1px solid white;
+}
+
+.suvs {
+    background-color: hsl(184, 100%, 22%);
+    padding: 25px;
+    line-height: 1.6rem;
+}
+
+.suvs img {
+    width: 30%;
+    margin-bottom: 20px;
+}
+.suvs h2 {
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.suvs p {
+    margin-bottom: 50px;
+}
+.suvs button {
+    color: hsl(184, 100%, 22%);
+}
+.suvs button:hover {
+    color: hsl(0, 0%, 95%);
+    background-color: hsl(184, 100%, 22%);
+    border: 1px solid white;
+}
+
+.luxury {
+    background-color: hsl(179, 100%, 13%);
+    padding: 25px;
+    line-height: 1.6rem;
+}
+
+.luxury img {
+    width: 30%;
+    margin-bottom: 20px;
+}
+.luxury h2 {
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.luxury p {
+    margin-bottom: 50px;
+}
+.luxury button {
+    color: hsl(179, 100%, 13%);
+}
+.luxury button:hover {
+    color: hsl(0, 0%, 95%);
+    background-color: hsl(179, 100%, 13%);
+    border: 1px solid white;
+}
+
+/* Responsive */
+@media screen and (max-width: 500px) {
+    .grid {
+        display: block;
+    }
+}
